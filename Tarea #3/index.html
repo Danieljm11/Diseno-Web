@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Boda</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagenes/anillo-de-bodas.png">
+    <!-- Google Fonts: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="font-family: 'Open Sans', sans-serif;">
+
+    <!-- Encabezado -->
+    <header class="bg-light text-center py-3">
+        <h1 class="fw-bold">Tu Boda Inolvidable</h1>
+        <nav>
+            <a href="#banner">Inicio</a> |
+            <a href="#video">Video</a> |
+            <a href="#servicios">Servicios</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Banner Full Width -->
+    <section id="banner" class="bg-dark text-white text-center p-5 animated fadeIn">
+        <h2>Haz de tu boda un momento único</h2>
+        <button class="btn btn-light">Reservar Ahora</button>
+    </section>
+
+    <!-- Video MP4 o YouTube -->
+    <section id="video" class="container my-5 text-center">
+        <h3>Video Representativo</h3>
+        <p>Este video muestra un poco sobre nuestro trabajo en cada uno de los eventos de nuestros clientes.</p>
+
+        <iframe width="100%" height="400"
+            src="https://www.youtube.com/embed/MVLwNOnMs9c?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=MVLwNOnMs9c"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </section>
+
+
+
+    <!-- Audio MP3 -->
+    <section id="audio" class="container my-5 text-center">
+        <h3>Música presente en los eventos</h3>
+        <p>A continuacion se presenta una pequeña muestra de la calidad de nuestra musica.</p>
+        <audio controls>
+            <source src="musica/el-futuro-empieza-hoy.mp3" type="audio/mp3">
+            Tu navegador no soporta audio.
+        </audio>
+    </section>
+
+    <!-- Mapa Google Full Width -->
+    <section id="mapa" class="my-5">
+        <h3 class="text-center">Ubicación</h3>
+        <p class="text-center"">En este mapa se puede obsevar nuestra ubicacion para que puedan visitarnos cuando gusten.</p>
+    <iframe src=" https://www.google.com/maps/embed?pb=..." width="100%" height="400" style="border:0;"
+            allowfullscreen></iframe>
+    </section>
+
+    <!-- Secciones de Contenido -->
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-5 bg-light text-center">
+        <div class="container">
+            <h3 class="mb-4 fw-bold">Servicios</h3>
+            <p>Como clientes pueden observar cuales son nuestros servicios principales.</p>
+            <div class="row">
+                <!-- Servicio 1 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="mb-3 fs-1">💐</div>
+                            <h5 class="card-title">Decoración Floral</h5>
+                            <p class="card-text">Arreglos románticos y elegantes para cada rincón.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 2 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="mb-3 fs-1">📸</div>
+                            <h5 class="card-title">Fotografía</h5>
+                            <p class="card-text">Capturamos cada instante con estilo y emoción.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 3 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="mb-3 fs-1">🍽️</div>
+                            <h5 class="card-title">Banquete</h5>
+                            <p class="card-text">Menús personalizados para deleitar a tus invitados.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicio 4 -->
+                <div class="col-md-3 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="mb-3 fs-1">🎶</div>
+                            <h5 class="card-title">Música</h5>
+                            <p class="card-text">Ambiente perfecto con bandas y DJs profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="py-5 bg-light text-center">
+        <div class="container">
+            <h3 class="mb-4 fw-bold">Galería de Bodas</h3>
+            <p> A continuacion podemos ver muestras de nuestros servicios en la boda de nuestros clientes.</p>
+            <div id="carouselBoda" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Imagen 1 -->
+                    <div class="carousel-item active">
+                        <img src="imagenes/galeria1.webp"
+                            class="d-block w-100 rounded shadow" alt="Decoración de boda">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Decoración Floral</h5>
+                            <p>Detalles románticos para cada rincón.</p>
+                        </div>
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/galeria2.jpg"
+                            class="d-block w-100 rounded shadow" alt="Banquete de boda">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Banquete</h5>
+                            <p>Menús personalizados para tus invitados.</p>
+                        </div>
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div class="carousel-item">
+                        <img src="imagenes/galeria3.webp"
+                            class="d-block w-100 rounded shadow" alt="Fotografía de boda">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Fotografía</h5>
+                            <p>Capturamos cada instante con emoción.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBoda" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBoda" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonios" class="py-5 bg-light text-center">
+        <div class="container">
+            <h3 class="mb-4 fw-bold">Lo que dicen nuestros clientes</h3>
+            <p>Un poco de las opiniones que han brindado nuestros clientes.</p>
+            <div class="row">
+                <!-- Testimonio 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <p class="mb-3">“La decoración fue mágica, hicieron de nuestra boda un sueño hecho realidad.”
+                        </p>
+                        <h6 class="fw-bold">María & Juan</h6>
+                        <small>San José, Costa Rica</small>
+                    </div>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <p class="mb-3">“El banquete estuvo espectacular, todos nuestros invitados quedaron encantados.”
+                        </p>
+                        <h6 class="fw-bold">Carolina & Andrés</h6>
+                        <small>Heredia, Costa Rica</small>
+                    </div>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <p class="mb-3">“Las fotos capturaron cada emoción, un recuerdo inolvidable para toda la vida.”
+                        </p>
+                        <h6 class="fw-bold">Laura & Pedro</h6>
+                        <small>Alajuela, Costa Rica</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección Explora Más -->
+    <section id="botones" class="py-5 text-center bg-white">
+        <div class="container">
+            <h3 class="mb-4 fw-bold">Explora más</h3>
+            <p class="mb-4">Descubre todo lo que tenemos preparado para tu boda soñada.</p>
+            <button class="btn btn-explora m-2">Galería 📷</button>
+            <button class="btn btn-explora m-2">Testimonios 💬</button>
+            <button class="btn btn-explora m-2">Paquetes 💝</button>
+        </div>
+    </section>
+
+
+
+    <!-- Formulario Suscripción -->
+    <section id="contacto" class="container my-5 animated fadeIn">
+        <h3>Suscríbete y recibe informacion</h3>
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Correo">
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control" placeholder="Teléfono">
+            </div>
+            <!-- Botón corregido con color rosado -->
+            <button type="submit" class="btn" style="background:#b23b57; color:white; border-radius:20px;">
+                Enviar
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2026 Tu Empresa de Bodas</p>
+    </footer>
+
+    <!-- Botón ScrollTop -->
+    <button onclick="window.scrollTo({top:0, behavior:'smooth'});" class="btn btn-secondary"
+        style="position:fixed; bottom:20px; right:20px; border-radius:50%; width:50px; height:50px;">
+        ↑
+    </button>
+
+    <!-- Chat WhatsApp -->
+    <a href="https://wa.me/506XXXXXXXX" target="_blank" style="position:fixed; bottom:80px; right:20px;">
+        <img src="imagenes/whatsapp.png" alt="WhatsApp" width="50">
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

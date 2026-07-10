@@ -1,0 +1,187 @@
+/* Importar fuente Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-color: #fff8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+header {
+  background: #f8e1e7;
+  border-bottom: 2px solid #e0a9b0;
+}
+header h1 {
+  font-size: 2rem;
+  color: #b23b57;
+}
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #b23b57;
+  font-weight: 600;
+}
+header nav a:hover {
+  color: #7a1f35;
+}
+
+/* Banner */
+#banner {
+  background: url('/imagenes/banner-boda.jpg') no-repeat center center/cover;
+  padding: 100px 20px;
+}
+#banner h2 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+#banner button {
+  background: #b23b57;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+#banner button:hover {
+  transform: scale(1.1);
+  background: #7a1f35;
+}
+
+/* Secciones */
+section h3 {
+  color: #b23b57;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Botones interactivos */
+#botones button {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+#botones button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Formulario */
+form input, form button {
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+form input {
+  border: 1px solid #e0a9b0;
+  padding: 10px;
+}
+form button {
+  background: #b23b57; /* Rosado principal */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #7a1f35; /* Tonalidad más oscura al hover */
+}
+
+/* Footer */
+footer {
+  background: #b23b57;
+  color: white;
+}
+
+/* Botón ScrollTop */
+button[onclick] {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  background: #b23b57;
+  color: white;
+  border: none;
+}
+button[onclick]:hover {
+  background: #7a1f35;
+}
+
+/* Animaciones */
+.animated {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#servicios h3, #botones h3 {
+  color: #b23b57;
+}
+
+.card-body h5 {
+  color: #7a1f35;
+  font-weight: bold;
+}
+
+.card-body p {
+  font-size: 16px;
+}
+
+#botones button {
+  border-radius: 25px;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+#botones button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Botones Explora Más */
+.btn-explora {
+  background: #b23b57; /* Rosado principal */
+  color: white;
+  border-radius: 25px;
+  padding: 12px 25px;
+  transition: all 0.3s ease;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-explora:hover {
+  background: #7a1f35; /* Tonalidad más oscura */
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  color: white;
+}
+
+#galeria h3 {
+  color: #b23b57;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.carousel-caption p {
+  color: #f8e1e7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+#galeria .carousel-item img {
+  height: 800px;          
+  object-fit: cover;      
+  width: 100%;            
+  border-radius: 10px;    
+}
+
