@@ -1,0 +1,111 @@
+/* =========================================================
+   REGLAS.CSS — TODAS LAS MEDIA QUERIES DEL SITIO
+   Aurora Bodas & Eventos
+   Punto de referencia de prueba: Samsung Galaxy S8 (360 x 740)
+========================================================= */
+
+/* =========================================================
+   <= 991.98px  (tablets y navbar colapsado)
+========================================================= */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+    margin-top: .8rem;
+    padding: 1.2rem 1.3rem;
+    border-radius: .9rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+  .nav-link { padding: .6rem 0; border-bottom: 1px solid rgba(183,110,121,.12); margin: 0; }
+  .navbar-nav { width: 100%; }
+  .nav-cta { display: inline-block; margin: .8rem 0 0; text-align: center; }
+  .dropdown-menu { border: none; box-shadow: none; background: transparent; padding-left: .8rem; }
+
+  .featured-case-body { padding: 1.8rem; }
+
+  .service-detail-img { min-height: 220px; }
+
+  footer .footer-col { margin-bottom: 2.2rem; }
+}
+
+/* =========================================================
+   <= 767.98px  (tablets pequeñas / móvil horizontal)
+========================================================= */
+@media (max-width: 767.98px) {
+  .section { padding: 4rem 0; }
+  .section-sm { padding: 2.6rem 0; }
+
+  .hero { min-height: 88vh; }
+  .hero-btns { flex-direction: column; align-items: center; }
+  .hero-btns .btn-outline-custom,
+  .hero-btns .btn-solid-custom { width: 100%; max-width: 280px; text-align: center; }
+
+  .page-banner { min-height: 34vh; }
+
+  .featured-case { flex-direction: column; }
+  .featured-case-img { min-height: 240px; }
+
+  .process-step { margin-bottom: 2.2rem; }
+
+  .gallery-img { height: 210px; }
+
+  .contact-form-wrap { padding: 1.8rem; }
+
+  .pricing-card.featured { transform: none; }
+}
+
+/* =========================================================
+   <= 575.98px  (móviles — incluye Samsung Galaxy S8: 360px)
+========================================================= */
+@media (max-width: 575.98px) {
+  .hero-title { font-size: 2.3rem; }
+  .hero-eyebrow { font-size: .75rem; letter-spacing: 2px; }
+  .hero-subtitle { font-size: .95rem; }
+
+  .page-banner-content h1 { font-size: 1.7rem; }
+  .breadcrumb-custom { font-size: .78rem; }
+
+  .eyebrow { font-size: 1.1rem; }
+  .section-heading h2 { font-size: 1.5rem; }
+
+  .stat-box .num { font-size: 2.1rem; }
+
+  .service-card { padding: 1.8rem 1.2rem; }
+
+  .pricing-card { padding: 2rem 1.4rem; }
+  .pricing-card .plan-price { font-size: 1.9rem; }
+
+  .featured-case-body { padding: 1.4rem; }
+  .featured-case-body h3 { font-size: 1.3rem; }
+
+  .team-photo { width: 120px; height: 120px; }
+
+  .testimonial-card { padding: 1.6rem 1.3rem; }
+
+  .blog-card img { height: 180px; }
+
+  .contact-form-wrap { padding: 1.4rem; }
+  .contact-info-item i { width: 40px; height: 40px; font-size: 1rem; }
+
+  footer { padding-top: 3rem; }
+  footer h5 { margin-top: 1.5rem; }
+}
+
+/* =========================================================
+   <= 400px  (teléfonos muy angostos)
+========================================================= */
+@media (max-width: 400px) {
+  .hero-title { font-size: 1.9rem; }
+  .gallery-img { height: 170px; }
+  .navbar-brand { font-size: 1.25rem; }
+  .navbar-brand .brand-mark { width: 32px; height: 32px; }
+  .process-step .step-num { width: 48px; height: 48px; font-size: 1.1rem; }
+}
+
+/* =========================================================
+   >= 992px  (ajustes específicos de escritorio)
+========================================================= */
+@media (min-width: 992px) {
+  .pricing-card.featured { transform: scale(1.05); }
+}
